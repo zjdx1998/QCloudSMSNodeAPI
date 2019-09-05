@@ -51,8 +51,8 @@ const deletePromptList = {
     default: false
 }
 
-fs.exists('smsconfig.json',function(exists){
-    if(!exists) {
+fs.access('smsconfig.json',function(err){
+    if(err.code=='ENOENT') {
         console.log("-------Please configure your QCloudSMS Info!-------");
         getQCloudSMSInfo();
     }
