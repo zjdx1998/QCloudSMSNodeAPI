@@ -25,7 +25,7 @@ function callback(err, data){
     console.log('Success');
 }
 var fs = require('fs');
-var sc = require('./secret.ts');
+var sc = require('./lib/secret.ts');
 function getQCloudSMSInfo(){
     let ans;
     inquirer.prompt(promptList).then(
