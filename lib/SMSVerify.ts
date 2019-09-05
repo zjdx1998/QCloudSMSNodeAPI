@@ -7,8 +7,7 @@
 var sc = require('./secret.ts')
 var QCloudSMS = require("qcloudsms_js");
 var fs = require('fs');
-let jsondata = JSON.parse(fs.readFileSync('smsconfig.json'));
-console.log(jsondata);
+let jsondata = JSON.parse(fs.readFileSync('./lib/smsconfig.json'));
 var appID = sc.Decrypt(jsondata.appID);
 var appKEY = sc.Decrypt(jsondata.appKEY);
 var templatedID = sc.Decrypt(jsondata.templatedID);
