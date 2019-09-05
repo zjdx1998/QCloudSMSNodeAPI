@@ -72,3 +72,7 @@ fs.exists('smsconfig.json',function(exists){
         )
     }
 });
+
+module.exports={
+    SMSVerify: require("./lib/SMSVerify.ts")
+}
