@@ -1,6 +1,6 @@
 {
-  "name": "qcloudsmsserver.js",
-  "version": "1.1.0",
+  "name": "@zjdx1998/qcloudsmsserver.js",
+  "version": "1.1.2",
   "description": "A SMS Server for QCloudSMSServer",
   "main": "index.ts",
   "scripts": {
@@ -16,7 +16,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zjdx1998/QCloudSMSNodeAPI.git"
+    "url": "git://github.com/zjdx1998/QCloudSMSNodeAPI.git"
   },
   "keywords": [
     "QCloudSMS"
@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/zjdx1998/QCloudSMSNodeAPI/issues"
   },
-  "homepage": "https://github.com/zjdx1998/QCloudSMSNodeAPI#readme"
+  "homepage": "https://github.com/zjdx1998/QCloudSMSNodeAPI#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
